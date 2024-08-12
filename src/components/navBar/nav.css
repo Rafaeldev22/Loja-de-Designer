@@ -1,0 +1,95 @@
+.cabecario {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 70px;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  width: 8vw;
+}
+
+.custom-button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  border: 0.5px solid #fff;
+}
+
+.custom-drop {
+  background-color: transparent;
+  color: #fff;
+  text-align: end;
+  border: none;
+  border-radius: 6px;
+}
+
+.custom {
+  background-color: transparent;
+  color: #fff;
+  text-align: end;
+  border: none;
+  border-radius: 6px;
+}
+
+/*Resposividade*/
+
+@media (max-width: 1440px) {
+  .logo {
+    width: 13vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 12vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 50vw;
+  }
+
+  .custom-button {
+    border: none;
+  }
+
+  .custom-drop{
+    border: none;
+    margin: 0 -69%;
+  }
+
+  .custom {
+    text-align: center;
+    border-bottom: 0.5px solid white;
+    background-color: rgba(0, 0, 0, 0.623);
+  }
+}
