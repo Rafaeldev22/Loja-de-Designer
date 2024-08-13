@@ -1,0 +1,11 @@
+.card{
+    width: 30rem;
+    height: 35rem;
+    border:"1px solid red";
+
+}
+
+.img{
+    width: 24.9vw;
+    height: 40vh;
+}

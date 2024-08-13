@@ -2,6 +2,8 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
+import "./card.css"
+
 
 
 import { conteudoPhotoshop } from "../../Api/conteudoPhotoshop";
@@ -13,8 +15,8 @@ export default function CardContent() {
   return (
     <>
       {conteudoPhotoshop.map((item, index) => (
-        <Card style={{ width: "18rem" }} key={index}>
-          <Card.Img variant="top" src={item.image} />
+        <Card key={index} className="card">
+          <Card.Img variant="top" src={item.image} className="img"/>
           <Card.Body>
             <Card.Title>{item.title}</Card.Title>
             <Card.Text>{item.description}</Card.Text>
