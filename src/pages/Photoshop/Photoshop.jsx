@@ -1,17 +1,13 @@
 import Nav from "../../components/navBar/Nav";
 import "./photoshop.css";
 
-// import VideoBackground from "../../components/videoBack/VideoBack";
+import VideoBackground from "../../components/videoBack/VideoBack";
+import CardContent from "../../components/card/Card";
 
 export default function Photoshop() {
   return (
     <>
-      <div className="video-container">
-        <video autoPlay loop muted playsInline className="video-background">
-          <source src="https://i.imgur.com/hkzEp0v.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeos em HTML5.
-        </video>
-      </div>
+      <VideoBackground />
 
       <main>
         <header>
@@ -22,6 +18,9 @@ export default function Photoshop() {
           <div className="box">
             <div className="boxinha">
               <h1>Página photoshop</h1>
+            </div>
+            <div className="content">
+              <CardContent />
             </div>
           </div>
         </section>
