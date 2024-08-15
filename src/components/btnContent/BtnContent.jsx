@@ -1,36 +1,37 @@
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-import { conteudoPhotoshop } from "../../Api/conteudoPhotoshop";
 
+function BtnContent({ packs }) {
+  const [show, setShow] = useState(false);
 
-export default function BtnContent(props) {
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleNavigate = () => {
+    window.location.href = "";
+  };
+
   return (
     <>
-        {conteudoPhotoshop.map((index, item) => (
-            <Modal
-                {...props}
-                size="lg"
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-                key={index}
-            >
-                <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    Conteudo desse pack!
-                </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                <h4>Conteudo</h4>
-                <p>
-                    {item.packs}
-                </p>
-                </Modal.Body>
-                <Modal.Footer>
-                <Button onClick={props.onHide}>Close</Button>
-                </Modal.Footer>
-            </Modal>
-        ))}
+      <Button variant="primary" onClick={handleShow}>
+        Conteúdo
+      </Button>
+
+      <Modal show={show} onHide={handleClose} size="lg"  centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Categorias que fazem parte desse Pack!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body> {typeof packs === 'object' ? JSON.stringify(packs) : packs} </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleNavigate}>
+            Abrir Pack
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
+
+export default BtnContent;

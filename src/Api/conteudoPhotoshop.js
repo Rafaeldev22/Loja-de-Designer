@@ -1,13 +1,13 @@
 export const conteudoPhotoshop = [
     {
       title: "Artes Para Redes Socias",
-      image: "https://mikeiasdesigner.com/wp-content/uploads/2023/09/SOCIAL-MEDIA-DESIGN-EM-FORTALEZA-Artes-para-redes-sociais-em-Fortaleza-2.webp",
+      image: "https://i.imgur.com/XfFvbzx.png",
       description: "Veja o que temos pra você, Mas se já sabe pode seguir em frente!",
       packs:"Área da saúde, Alimentação, lojas, igrejas, Estéticas, Promoções, informatica, contabilidade, supermercado, imobiliária, Academia, Pet Shop, Auto Escola, assistência técnica, Salão de Beleza, Automóveis. ",
       link: ""
     },
     {
-      title: "Guia CSS Avançado",
+      title: "Artes Eventos",
       image: "https://example.com/css.png",
       description: "Aprofunde seus conhecimentos em CSS com técnicas avançadas.",
       link: "https://example.com/guia-css-avancado"

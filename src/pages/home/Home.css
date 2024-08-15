@@ -89,6 +89,11 @@
 }
 
 @media (max-width: 425px) {
+
+  .image{
+    object-fit: cover;
+  }
+
   .nav {
     display: flex;
     flex-direction: column;
