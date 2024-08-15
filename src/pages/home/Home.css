@@ -79,6 +79,10 @@
 }
 
 @media (max-width: 768px) {
+  .image-container{
+    overflow: hidden;
+  }
+
   .logo {
     width: 15vw;
   }
