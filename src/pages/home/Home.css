@@ -90,6 +90,10 @@
 
 @media (max-width: 425px) {
 
+  .image-container{
+    overflow: hidden;
+  }
+
   .image{
     object-fit: cover;
   }
