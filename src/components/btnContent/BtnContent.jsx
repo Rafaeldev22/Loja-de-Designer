@@ -2,6 +2,8 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
+import "./btnContent.css"
+
 
 function BtnContent({ packs }) {
   const [show, setShow] = useState(false);
@@ -19,11 +21,11 @@ function BtnContent({ packs }) {
         Conteúdo
       </Button>
 
-      <Modal show={show} onHide={handleClose} size="lg"  centered>
-        <Modal.Header closeButton>
+      <Modal show={show} onHide={handleClose} size="lg" centered >
+        <Modal.Header closeButton style={{ background:"#000", color: "white", }}>
           <Modal.Title>Categorias que fazem parte desse Pack!</Modal.Title>
         </Modal.Header>
-        <Modal.Body> {typeof packs === 'object' ? JSON.stringify(packs) : packs} </Modal.Body>
+        <Modal.Body className="body"> {typeof packs === 'object' ? JSON.stringify(packs) : packs} </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleNavigate}>
             Abrir Pack

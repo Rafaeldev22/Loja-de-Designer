@@ -17,7 +17,7 @@ export default function Photoshop() {
         <section className="sessao-1">
           <div className="box">
             <div className="boxinha">
-              <h1>Página photoshop</h1>
+              <h1>Photoshop Pack's</h1>
             </div>
             <div className="content">
               <CardContent />

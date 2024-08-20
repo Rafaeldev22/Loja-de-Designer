@@ -1,8 +1,18 @@
 .card{
     width: 30rem;
     height: 35rem;
-    border:"1px solid red";
+    border: 0.2px solid #17f9ff;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px #17F9FF;
+    transition: .2s ease;
+    cursor: pointer;
+}
 
+.card:hover{
+    border: 1px solid #17F9FF;
+    box-shadow: 0px 0px 20px #17F9FF;
 }
 
 .img{

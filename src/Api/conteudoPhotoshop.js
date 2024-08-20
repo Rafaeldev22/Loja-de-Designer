@@ -7,10 +7,11 @@ export const conteudoPhotoshop = [
       link: ""
     },
     {
-      title: "Artes Eventos",
-      image: "https://example.com/css.png",
-      description: "Aprofunde seus conhecimentos em CSS com técnicas avançadas.",
-      link: "https://example.com/guia-css-avancado"
+      title: "Artes Para Eventos",
+      image: "https://i.imgur.com/2OTpPbV.png",
+      description: "Aqui você vai encontrar tudo que precisa para fechar os contratos que sempre quis!!",
+      packs:"Carnaval, 6 Packs com mais de 15Gb de flyers variados, 2 Packs de Agendas com mais de 50Gb, Pack summer, Pack funk, Country, 2 Packs para festas juninas, Packs Avançados com mais de 50Gb",
+      link: ""
     },
     {
       title: "Introdução ao JavaScript",

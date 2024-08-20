@@ -48,7 +48,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 
     overflow: auto;
 }
@@ -63,6 +63,6 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #7f0079;
+    background: #17f9ff;
     border-radius: 6px;
 }
